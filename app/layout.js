@@ -19,8 +19,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: APP_NAME,
-  description: `Discover stunning visuals with ${APP_NAME} — your modern image discovery hub.`,
+  title: `${APP_NAME} | Discover Stunning Free Images`,
+  description: `Explore breathtaking visuals on ${APP_NAME}, your ultimate hub for discovering high-quality, royalty-free images. Updated daily with curated collections from top sources.`,
+  keywords: [
+    APP_NAME,
+    'free stock photos',
+    'image discovery',
+    'photo gallery',
+    'royalty-free images',
+    'Unsplash',
+    'Pexels',
+    'HD wallpapers',
+    'visual inspiration'
+  ],
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: `${APP_NAME} | Discover Stunning Free Images`,
+    description: `Explore breathtaking visuals on ${APP_NAME}, your ultimate hub for discovering high-quality, royalty-free images.`,
+    siteName: APP_NAME,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${APP_NAME} | Discover Stunning Free Images`,
+    description: `Explore breathtaking visuals on ${APP_NAME}, your ultimate hub for discovering high-quality, royalty-free images.`,
+  },
 };
 
 export default function RootLayout({ children }) {
