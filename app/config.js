@@ -8,7 +8,7 @@ const getMainDomain = () => {
   // Fallback if invalid
   if (isIp || isLocalhost || !domain) return "pictory.com";
 
-  return domain;
+  return "pictory.com";
 };
 
 
@@ -30,13 +30,11 @@ const getSiteName = () => {
   // Use the first part of the domain (before the TLD) as the name
   const name = domain.split(".")[0];
 
-  return name.charAt(0).toUpperCase() + name.slice(1) || "Pictory";
+  return "Pictory";
 };
 
 const APP_NAME = getSiteName();
 const APP_DOMAIN = getMainDomain();
-// const UNSPLASH_API_KEY = "qgj37muAwwQPwAWud0gp5Bzh6jyZMG_-uiaYea3wM4k";
-// const PEXELS_API_KEY = "nYx4mFnlGJE3oSpsV2NfWsarO1RIa6pffgfVECSqapAyXasYykk86BJn";
 const UNSPLASH_API_KEY = process.env.NEXT_PUBLIC_UNSPLASH_API_KEY;
 const PEXELS_API_KEY = process.env.NEXT_PUBLIC_PEXELS_API_KEY;
 
